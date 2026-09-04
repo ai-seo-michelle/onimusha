@@ -20,27 +20,27 @@ const primaryHubs = [
   {
     title: "Guides",
     path: "/guides/",
-    summary: "Release-day orientation now; verified walkthroughs and combat explainers later.",
+    summary: "Walkthroughs, beginner tips, combat help, and progression support.",
   },
   {
     title: "Bosses",
     path: "/bosses/",
-    summary: "A hub for confirmed boss strategies, movesets, and counters after verification.",
+    summary: "Boss strategies, attack patterns, counters, and combat tips.",
   },
   {
     title: "Weapons",
     path: "/weapons/",
-    summary: "A future index for confirmed weapons, unlock conditions, and upgrade notes.",
+    summary: "Weapon locations, abilities, upgrades, and combat uses.",
   },
   {
     title: "Items",
     path: "/items/",
-    summary: "A clean structure for confirmed items, effects, sources, and usage notes.",
+    summary: "Item locations, effects, and where to use them.",
   },
   {
     title: "Puzzles",
     path: "/puzzles/",
-    summary: "A hub for exact puzzle solutions once locations and steps are checked in-game.",
+    summary: "Puzzle solutions, locations, and step-by-step answers.",
   },
 ];
 
@@ -106,7 +106,16 @@ function renderFutureTags(extra = []) {
 }
 
 function renderGuideHighlights() {
-  if (verifiedGuides.length === 0) return "";
+  if (verifiedGuides.length === 0) {
+    return `
+      <section class="section" aria-labelledby="latest-guides">
+        <div class="section-heading">
+          <h2 id="latest-guides">Latest Guides</h2>
+          <p>New guides are being added as players discover the game.</p>
+        </div>
+      </section>
+    `;
+  }
 
   const items = verifiedGuides.slice(0, 6).map((guide) => `
     <a class="hub-card" href="${guide.path}">
@@ -179,7 +188,9 @@ function renderFooter(page) {
         </div>
         <p>${isJa
           ? "Onimusha Fan Guide は非公式ファンサイトです。Capcom 公式サイトではなく、Capcom と提携していません。"
-          : "Onimusha Fan Guide is an unofficial fan site. It is not affiliated with, endorsed by, or operated by Capcom."}</p>
+          : page.path === "/"
+            ? "This is an unofficial fan site and is not affiliated with Capcom."
+            : "Onimusha Fan Guide is an unofficial fan site. It is not affiliated with, endorsed by, or operated by Capcom."}</p>
       </div>
     </footer>
   `;
@@ -305,8 +316,8 @@ const pages = [
         <div class="hero-copy">
           <p class="eyebrow">Unofficial fan guide / wiki</p>
           <h1>Onimusha: Way of the Sword Fan Guide</h1>
-          <p class="lede">A launch-day guide hub for Onimusha: Way of the Sword, built around verified basics and ready for real walkthroughs as they are checked in the released game.</p>
-          <p class="notice">This site is a fan-made guide. It does not use official screenshots, logos, or copied wiki content, and it will not publish unverified boss, weapon, item, quest, or puzzle claims.</p>
+          <p class="lede">Boss strategies, weapons, items, puzzles, locations, and gameplay guides for Onimusha: Way of the Sword.</p>
+          <p class="notice">Unofficial fan guide for players exploring the new dark fantasy chapter of Onimusha.</p>
         </div>
         <aside class="release-panel" aria-label="Site status">
           <img class="brand-mark" src="/favicon.svg" width="58" height="58" alt="">
@@ -330,28 +341,12 @@ const pages = [
       <section class="section" aria-labelledby="start-here">
         <div class="section-heading">
           <h2 id="start-here">Start Here</h2>
-          <p>These launch-day hubs are real pages with stable descriptions. Specific guide links will appear only after the details are verified.</p>
+          <p>Choose a section to find strategy help, collectibles, puzzle answers, and combat advice.</p>
         </div>
         <div class="hub-grid">${renderHubCards()}</div>
       </section>
 
       ${renderGuideHighlights()}
-
-      <section class="section content-grid" aria-labelledby="coverage-map">
-        <div class="panel">
-          <h2 id="coverage-map">Future Coverage Map</h2>
-          <p class="muted">The site is prepared for fast expansion over the next 48 hours without publishing empty pages. New URLs should be added only when they contain verified, useful guide content.</p>
-          <div class="status-strip">Reserved areas include ${renderFutureTags(["Bosses", "Weapons", "Items", "Puzzles"])}</div>
-        </div>
-        <div class="panel">
-          <h2>Editorial Rules</h2>
-          <ul class="rule-list">
-            <li>No copied content from other wikis or guide sites.</li>
-            <li>No protected official images, screenshots, or logos.</li>
-            <li>No fake boss, weapon, item, quest, or puzzle pages.</li>
-          </ul>
-        </div>
-      </section>
     `,
   },
   {
