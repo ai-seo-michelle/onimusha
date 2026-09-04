@@ -14,6 +14,8 @@ const site = {
   lastmod: "2026-09-04",
 };
 
+const gaMeasurementId = "G-W5XG6KYTBP";
+
 const verifiedGuides = [];
 
 const primaryHubs = [
@@ -259,8 +261,22 @@ function renderAlternates(page) {
   return `${links}${xDefault}`;
 }
 
+function renderGoogleTag(page) {
+  if (page.noindex) return "";
+
+  return `    <script async id="google-analytics-gtag" src="https://www.googletagmanager.com/gtag/js?id=${gaMeasurementId}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", new URL(document.getElementById("google-analytics-gtag").src).searchParams.get("id"));
+    </script>
+`;
+}
+
 function renderHead(page) {
   const locale = page.lang === "ja" ? "ja_JP" : "en_US";
+  const googleTag = renderGoogleTag(page);
   return `
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -280,7 +296,7 @@ function renderHead(page) {
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="${esc(page.title)}">
     <meta name="twitter:description" content="${esc(page.description)}">
-    <link rel="stylesheet" href="/assets/styles.css">
+${googleTag}    <link rel="stylesheet" href="/assets/styles.css">
     <script type="application/ld+json">${renderJsonLd(page)}</script>
   `;
 }
@@ -671,6 +687,11 @@ async function validateBuild() {
       'application/ld+json',
     ]) {
       if (!html.includes(required)) throw new Error(`${page.path} is missing ${required}`);
+    }
+    const gaIdCount = html.split(gaMeasurementId).length - 1;
+    if (gaIdCount !== 1) throw new Error(`${page.path} should include exactly one GA4 Measurement ID, found ${gaIdCount}.`);
+    if (!html.includes("https://www.googletagmanager.com/gtag/js?id=")) {
+      throw new Error(`${page.path} is missing the GA4 gtag.js script.`);
     }
   }
 }
