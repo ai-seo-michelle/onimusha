@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://onimusha.site/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onimusha.site/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://onimusha.site/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onimusha.site/" />
+  </url>
+  <url>
+    <loc>https://onimusha.site/guides/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onimusha.site/guides/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://onimusha.site/ja/guides/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onimusha.site/guides/" />
+  </url>
+  <url>
+    <loc>https://onimusha.site/bosses/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://onimusha.site/weapons/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://onimusha.site/items/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://onimusha.site/puzzles/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://onimusha.site/ja/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onimusha.site/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://onimusha.site/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onimusha.site/" />
+  </url>
+  <url>
+    <loc>https://onimusha.site/ja/guides/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://onimusha.site/guides/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://onimusha.site/ja/guides/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://onimusha.site/guides/" />
+  </url>
+</urlset>

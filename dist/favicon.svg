@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Onimusha fan guide crest">
+  <rect width="64" height="64" rx="12" fill="#0b0b0d"/>
+  <path d="M13 47c10-3 20-9 31-26 2-3 5-4 8-3-1 5-3 9-7 13-9 9-20 16-32 16Z" fill="#d7c08b"/>
+  <path d="M25 53 50 12" stroke="#f1e7d2" stroke-width="5" stroke-linecap="round"/>
+  <path d="m20 41 11 7" stroke="#9f2f2a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M18 17c6-5 16-5 22 0-6 3-12 5-22 0Z" fill="#9f2f2a"/>
+  <path d="M23 18c2 4 4 7 9 9 4-2 7-5 9-9" fill="none" stroke="#d7c08b" stroke-width="3" stroke-linecap="round"/>
+</svg>

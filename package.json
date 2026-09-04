@@ -1,0 +1,13 @@
+{
+  "name": "onimusha-fan-guide",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "preview": "node src/preview.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
