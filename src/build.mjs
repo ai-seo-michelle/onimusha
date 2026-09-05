@@ -16,7 +16,20 @@ const site = {
 
 const gaMeasurementId = "G-W5XG6KYTBP";
 
-const verifiedGuides = [];
+const verifiedGuides = [
+  {
+    title: "Mask Puzzle Guide",
+    path: "/puzzles/mask-puzzle/",
+    category: "Puzzle",
+    summary: "Use the mask order 3, 4, 1, 2 to open the locked container.",
+  },
+  {
+    title: "Issen Guide",
+    path: "/guides/issen/",
+    category: "Combat",
+    summary: "Learn the attack timing behind Onimusha's signature critical counter.",
+  },
+];
 
 const primaryHubs = [
   {
@@ -396,6 +409,82 @@ const pages = [
           ])}
         </div>
       </section>
+      <section class="section" aria-labelledby="current-guides">
+        <div class="section-heading">
+          <h2 id="current-guides">Current Guides</h2>
+          <p>Focused guides available now.</p>
+        </div>
+        ${renderLinkList([
+          ["Issen Guide", "/guides/issen/"],
+        ])}
+      </section>
+    `,
+  },
+  {
+    path: "/guides/issen/",
+    lang: "en",
+    title: pageTitle("Onimusha Issen Guide"),
+    description: "Learn how to perform Issen in Onimusha: Way of the Sword, including timing, practice tips, and common mistakes.",
+    h1: "Onimusha: Way of the Sword Issen Guide",
+    schemaType: "Article",
+    breadcrumbs: [
+      { label: "Home", path: "/" },
+      { label: "Guides", path: "/guides/" },
+      { label: "Issen Guide", path: "/guides/issen/" },
+    ],
+    body: () => `
+      <section class="page-header">
+        <p class="eyebrow">Combat guide</p>
+        <h1>Onimusha: Way of the Sword Issen Guide</h1>
+        <p class="lede">Issen is Onimusha's signature critical counter. In Way of the Sword, the basic idea is simple but strict: attack at the last moment, just before an enemy strike connects.</p>
+      </section>
+      <section class="content-grid">
+        <div class="panel">
+          <h2>How to Perform Issen</h2>
+          <ul class="rule-list">
+            <li><strong>Watch the enemy's committed swing.</strong> Do not react to the first twitch or step forward. Wait until the attack is actually coming in.</li>
+            <li><strong>Press attack just before impact.</strong> The regular Issen timing is an attack input placed right before the enemy hit lands.</li>
+            <li><strong>Stay calm after a miss.</strong> If the input is too early or too late, treat it as a failed counter and reset your spacing instead of mashing.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>What Issen Is</h2>
+          <p class="muted">Issen is a high-risk critical attack built around timing. It is different from defensive options such as parry, deflect, or evade because the counter depends on committing to the attack at the right moment.</p>
+          <p class="muted">No official frame window was available in the checked sources, so this guide avoids claiming an exact number of frames.</p>
+        </div>
+      </section>
+      <section class="section content-grid">
+        <div class="panel">
+          <h2>Timing Tips</h2>
+          <ul class="rule-list">
+            <li><strong>Use slower melee enemies for practice.</strong> Attacks with a clear wind-up make the final hit timing easier to read.</li>
+            <li><strong>Look for the point of no return.</strong> The best cue is usually the moment the enemy has committed to the strike and can no longer simply reposition.</li>
+            <li><strong>Practice one attack at a time.</strong> Learning a single swing pattern is more useful than trying to counter every move in a new fight.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Common Mistakes</h2>
+          <ul class="rule-list">
+            <li><strong>Pressing too early.</strong> An early attack usually becomes a normal swing instead of an Issen.</li>
+            <li><strong>Mashing attack.</strong> Repeated inputs make the timing less precise and can leave you exposed.</li>
+            <li><strong>Treating Issen like a block.</strong> It is a counterattack timing, not a guard held through the enemy's hit.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section content-grid">
+        <div class="panel">
+          <h2>Related Terms</h2>
+          <p class="muted">Some guides and in-game references may mention Chain Issen or Break Issen. Those are related Issen techniques, but this page focuses on the regular timing players search for first.</p>
+        </div>
+        <div class="panel">
+          <h2>Keep Reading</h2>
+          ${renderLinkList([
+            ["Guides Hub", "/guides/"],
+            ["Bosses", "/bosses/"],
+            ["Weapons", "/weapons/"],
+          ])}
+        </div>
+      </section>
     `,
   },
   {
@@ -514,6 +603,85 @@ const pages = [
             ["Guides", "/guides/"],
             ["Items", "/items/"],
             ["Bosses", "/bosses/"],
+          ])}
+        </div>
+      </section>
+      <section class="section" aria-labelledby="current-puzzles">
+        <div class="section-heading">
+          <h2 id="current-puzzles">Current Puzzle Guides</h2>
+          <p>Focused puzzle help available now.</p>
+        </div>
+        ${renderLinkList([
+          ["Mask Puzzle Guide", "/puzzles/mask-puzzle/"],
+        ])}
+      </section>
+    `,
+  },
+  {
+    path: "/puzzles/mask-puzzle/",
+    lang: "en",
+    title: pageTitle("Onimusha Mask Puzzle Solution"),
+    description: "Solve the Onimusha mask puzzle in Way of the Sword with the correct mask order, clue explanation, and troubleshooting tips.",
+    h1: "Onimusha: Way of the Sword Mask Puzzle Guide",
+    schemaType: "Article",
+    breadcrumbs: [
+      { label: "Home", path: "/" },
+      { label: "Puzzles", path: "/puzzles/" },
+      { label: "Mask Puzzle", path: "/puzzles/mask-puzzle/" },
+    ],
+    body: () => `
+      <section class="page-header">
+        <p class="eyebrow">Puzzle guide</p>
+        <h1>Onimusha: Way of the Sword Mask Puzzle Guide</h1>
+        <p class="lede">The mask puzzle answer is 3, 4, 1, 2. Count the four masks above the locked container from left to right, then shoot them in that order.</p>
+      </section>
+      <section class="content-grid">
+        <div class="panel">
+          <h2>Mask Puzzle Solution</h2>
+          <ul class="rule-list">
+            <li><strong>Face the locked container.</strong> Use the four masks mounted above it as the targets.</li>
+            <li><strong>Number the target masks from left to right.</strong> The leftmost mask is 1, then 2, 3, and 4.</li>
+            <li><strong>Shoot the masks in this order:</strong> 3, 4, 1, 2.</li>
+            <li><strong>Collect the reward.</strong> Opening the container gives the Unsettling Mask.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>How the Puzzle Works</h2>
+          <p class="muted">The room uses two sets of masks. The masks above the locked container are the ones you interact with, while the masks on the opposite shoji-style wall provide the clue.</p>
+          <p class="muted">The light and shadow pattern points to the order. If you only need the answer, use 3, 4, 1, 2 on the target masks.</p>
+        </div>
+      </section>
+      <section class="section content-grid">
+        <div class="panel">
+          <h2>Step-by-Step</h2>
+          <ul class="rule-list">
+            <li><strong>1. Stand where you can see the container and all four target masks.</strong></li>
+            <li><strong>2. Count the target masks from left to right.</strong></li>
+            <li><strong>3. Shoot the third mask, then the fourth mask.</strong></li>
+            <li><strong>4. Shoot the first mask, then the second mask.</strong></li>
+            <li><strong>5. Open the container and take the Unsettling Mask.</strong></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Common Mistakes</h2>
+          <ul class="rule-list">
+            <li><strong>Shooting the clue masks.</strong> The shoji-wall masks show the hint; the targets are above the locked container.</li>
+            <li><strong>Counting from the wrong wall.</strong> The 3, 4, 1, 2 order is for the target masks above the container.</li>
+            <li><strong>Reversing left and right.</strong> Face the target masks directly before counting them.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section content-grid">
+        <div class="panel">
+          <h2>Location Note</h2>
+          <p class="muted">The mask puzzle appears in the Underground Laboratory section. Use the direct order above if you are already in the room and just need the solution.</p>
+        </div>
+        <div class="panel">
+          <h2>Keep Reading</h2>
+          ${renderLinkList([
+            ["Puzzles Hub", "/puzzles/"],
+            ["Items", "/items/"],
+            ["Guides", "/guides/"],
           ])}
         </div>
       </section>

@@ -20,6 +20,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://onimusha.site/guides/" />
   </url>
   <url>
+    <loc>https://onimusha.site/guides/issen/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
     <loc>https://onimusha.site/bosses/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>daily</changefreq>
@@ -42,6 +49,13 @@
   </url>
   <url>
     <loc>https://onimusha.site/puzzles/</loc>
+    <lastmod>2026-09-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+
+  </url>
+  <url>
+    <loc>https://onimusha.site/puzzles/mask-puzzle/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
