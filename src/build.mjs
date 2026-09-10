@@ -18,6 +18,18 @@ const gaMeasurementId = "G-W5XG6KYTBP";
 
 const verifiedGuides = [
   {
+    title: "Final Boss Guide",
+    path: "/guides/final-boss/",
+    category: "Boss",
+    summary: "Prepare for Yoshitsune and handle the final fight phase by phase.",
+  },
+  {
+    title: "Hidden Treasures Guide",
+    path: "/guides/hidden-treasures/",
+    category: "Collectibles",
+    summary: "Find the five Hidden Treasure chests across Eastern Kyoto.",
+  },
+  {
     title: "Mask Puzzle Guide",
     path: "/puzzles/mask-puzzle/",
     category: "Puzzle",
@@ -415,8 +427,161 @@ const pages = [
           <p>Focused guides available now.</p>
         </div>
         ${renderLinkList([
+          ["Final Boss Guide", "/guides/final-boss/"],
+          ["Hidden Treasures Guide", "/guides/hidden-treasures/"],
           ["Issen Guide", "/guides/issen/"],
         ])}
+      </section>
+    `,
+  },
+  {
+    path: "/guides/final-boss/",
+    lang: "en",
+    title: pageTitle("Onimusha: Way of the Sword Final Boss Guide"),
+    description: "Learn how to beat the Onimusha: Way of the Sword final boss, including preparation, phase tips, Issen timing, and common mistakes.",
+    h1: "Onimusha: Way of the Sword Final Boss Guide",
+    schemaType: "Article",
+    breadcrumbs: [
+      { label: "Home", path: "/" },
+      { label: "Guides", path: "/guides/" },
+      { label: "Final Boss Guide", path: "/guides/final-boss/" },
+    ],
+    body: () => `
+      <section class="page-header">
+        <p class="eyebrow">Boss guide</p>
+        <h1>Onimusha: Way of the Sword Final Boss Guide</h1>
+        <p class="lede">The final boss of Onimusha: Way of the Sword is Minamoto no Yoshitsune. This guide focuses on preparation, safe openings, Issen timing, and the three-phase rhythm of the fight without spoiling the full ending.</p>
+      </section>
+      <section class="content-grid">
+        <div class="panel">
+          <h2>Final Boss Overview</h2>
+          <p class="muted">Checked boss guides identify Yoshitsune as the last major fight and describe the encounter as a long, demanding three-phase battle. Treat it as an endurance test instead of a burst-damage race.</p>
+          <p class="muted">Your goal is to preserve healing, learn which strings are safe to block or parry, and use Issen only when the timing is readable.</p>
+        </div>
+        <div class="panel">
+          <h2>Before the Fight</h2>
+          <ul class="rule-list">
+            <li><strong>Equip your strongest available weapon and armor.</strong> Do not enter the final stretch with under-upgraded gear if you still have room to improve it.</li>
+            <li><strong>Stock recovery items.</strong> Heavy Restoratives are especially valuable because the later phases leave less room for sloppy healing.</li>
+            <li><strong>Bring useful consumables.</strong> Amulet of Introspection, Stimulant, Sun-Dried Hozuki, Greater Defense Talisman, and Greater Might Talisman are all named in checked final-boss preparation notes.</li>
+            <li><strong>Save your strongest tools.</strong> The safest plan is to keep major healing and Oni Awakening for the late fight instead of spending everything in phase one.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section content-grid">
+        <div class="panel">
+          <h2>How to Beat Yoshitsune</h2>
+          <ul class="rule-list">
+            <li><strong>Phase 1: learn the sword rhythm.</strong> Block or parry the cleaner sword strings, dodge attacks that push you out of position, and avoid using rare consumables just because you took one hit.</li>
+            <li><strong>Phase 2: respect the faster pressure.</strong> Yoshitsune becomes harder to reset against, so take shorter punishes and look for red-glowing claw attacks as Issen opportunities only when you can read the timing.</li>
+            <li><strong>Phase 3: play for survival first.</strong> This is where saved healing, buffs, and Oni Awakening matter most. Do not chase damage after every knockdown; reset spacing and wait for a clean opening.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Combat Tips</h2>
+          <ul class="rule-list">
+            <li><strong>Use Issen as a punish, not a guess.</strong> If the timing is unclear, defend or dodge instead of gambling your health bar.</li>
+            <li><strong>Do not mash after blocking.</strong> Yoshitsune can punish greedy follow-ups, especially later in the fight.</li>
+            <li><strong>Heal after movement, not panic.</strong> Create space first, then use a recovery item when the boss is not already starting another string.</li>
+            <li><strong>Practice the counter timing separately.</strong> The <a href="/guides/issen/">Issen Guide</a> explains the basic last-moment attack input if you need a refresher before the final fight.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section content-grid">
+        <div class="panel">
+          <h2>Common Reasons Players Lose</h2>
+          <ul class="rule-list">
+            <li><strong>Entering without enough consumables.</strong> The fight is long enough that one bad phase can drain your supplies.</li>
+            <li><strong>Forcing Issen on every attack.</strong> Missed counter attempts are often worse than simple defense.</li>
+            <li><strong>Spending Oni Awakening too early.</strong> Saving it for the last phase gives you a stronger recovery plan when the fight is most dangerous.</li>
+            <li><strong>Overcommitting after a punish.</strong> Take the confirmed hits, then get ready to defend again.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>After the Final Boss</h2>
+          <p class="muted">Beating Yoshitsune clears the final encounter and moves the game into its ending sequence. This page avoids listing unverified post-game rewards or exact ending details.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="panel">
+          <h2>FAQ</h2>
+          <ul class="rule-list">
+            <li><strong>Who is the final boss in Onimusha: Way of the Sword?</strong> The final boss is Minamoto no Yoshitsune.</li>
+            <li><strong>How many phases does the final boss have?</strong> Checked final-boss guides describe the fight as having three phases.</li>
+            <li><strong>Should I use Issen against Yoshitsune?</strong> Yes, but only when the attack timing is clear. Red-glowing claw attacks are called out as useful counter opportunities in checked guides.</li>
+            <li><strong>What should I save for the last phase?</strong> Save major healing, buffs, and Oni Awakening for the most dangerous part of the fight.</li>
+          </ul>
+        </div>
+      </section>
+    `,
+  },
+  {
+    path: "/guides/hidden-treasures/",
+    lang: "en",
+    title: pageTitle("Onimusha Hidden Treasures Locations"),
+    description: "Find Onimusha: Way of the Sword Hidden Treasures, including Hidden Treasure No. 1, No. 3, route notes, and location tips.",
+    h1: "Onimusha: Way of the Sword Hidden Treasures Guide",
+    schemaType: "Article",
+    breadcrumbs: [
+      { label: "Home", path: "/" },
+      { label: "Guides", path: "/guides/" },
+      { label: "Hidden Treasures", path: "/guides/hidden-treasures/" },
+    ],
+    body: () => `
+      <section class="page-header">
+        <p class="eyebrow">Collectibles guide</p>
+        <h1>Onimusha: Way of the Sword Hidden Treasures Guide</h1>
+        <p class="lede">Hidden Treasures are numbered optional chests found across Eastern Kyoto. This guide covers the five documented Hidden Treasure locations, with extra notes for No. 1 and No. 3 because those are easy to search for and miss.</p>
+      </section>
+      <section class="section">
+        <div class="panel">
+          <h2>Hidden Treasure Locations</h2>
+          <ul class="rule-list">
+            <li><strong>Hidden Treasure No. 1 - Kiyomizu-dera.</strong> After the Swaying Bridge section, go through the red metal door near the save statue and check behind the crates.</li>
+            <li><strong>Hidden Treasure No. 2 - Gojo Bridge.</strong> After crossing the bridge, take the first lane on the right, use the grapple point, then look past the hole in the wall.</li>
+            <li><strong>Hidden Treasure No. 3 - Nijo Castle.</strong> After defeating the strong Genma and opening the metal door, check under the stairs in the southwest corner.</li>
+            <li><strong>Hidden Treasure No. 4 - Kuramadera.</strong> After solving the karakuri box and getting the Rusty Key, unlock the door to the north and follow the path to the chest.</li>
+            <li><strong>Hidden Treasure No. 5 - Kitano Tenmangu.</strong> Search the west-most lane near the chicken cages. If you lose the route, use Tenkai's guidance to narrow the direction.</li>
+          </ul>
+        </div>
+      </section>
+      <section class="section content-grid">
+        <div class="panel">
+          <h2>Hidden Treasure No. 1</h2>
+          <p class="muted">For Hidden Treasure No. 1, the key landmark is the save statue after the Swaying Bridge route in Kiyomizu-dera. Go through the nearby red metal door and inspect the crates instead of staying on the main path.</p>
+          <p class="muted">If you are already past this section, treat the red door and crate pile as your anchor points when backtracking.</p>
+        </div>
+        <div class="panel">
+          <h2>Hidden Treasure No. 3</h2>
+          <p class="muted">For Hidden Treasure No. 3, progress through Nijo Castle until the strong Genma encounter is cleared and the metal door opens. Once inside, do not rush forward; the chest is under the stairs in the southwest corner.</p>
+          <p class="muted">This is the one players often search as "hidden treasure 3" because the route can look like normal progression after the fight.</p>
+        </div>
+      </section>
+      <section class="section content-grid">
+        <div class="panel">
+          <h2>Exploration Tips</h2>
+          <ul class="rule-list">
+            <li><strong>Check side routes after major fights.</strong> Several treasure routes open or become easier to reach after combat encounters or gated paths.</li>
+            <li><strong>Look behind stairs, crates, and narrow lanes.</strong> Hidden Treasure chests are easy to miss when the main route points forward.</li>
+            <li><strong>Finish nearby locks and mechanisms.</strong> No. 4 depends on the Rusty Key route after the karakuri box, so puzzle progress can matter for collectibles.</li>
+            <li><strong>Keep puzzle notes nearby.</strong> If you are clearing optional rooms too, the <a href="/puzzles/mask-puzzle/">Mask Puzzle Guide</a> covers the mask-order solution.</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>What This Guide Does Not Guess</h2>
+          <p class="muted">This page does not invent extra Hidden Treasure numbers, chest rewards, or unrelated old-game collectible routes. It covers the five documented numbered chests for Onimusha: Way of the Sword only.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="panel">
+          <h2>FAQ</h2>
+          <ul class="rule-list">
+            <li><strong>How many Hidden Treasures are in Onimusha: Way of the Sword?</strong> Current documented guides list five numbered Hidden Treasure chests.</li>
+            <li><strong>Where is Hidden Treasure No. 1?</strong> It is in Kiyomizu-dera, behind crates past the red metal door near the save statue after Swaying Bridge.</li>
+            <li><strong>Where is Hidden Treasure No. 3?</strong> It is in Nijo Castle, under the stairs in the southwest corner after the strong Genma encounter and metal door.</li>
+            <li><strong>Is this only a Hidden Treasure 3 guide?</strong> No. This is the main Hidden Treasures guide, with No. 3 highlighted because players commonly search for it by number.</li>
+          </ul>
+        </div>
       </section>
     `,
   },
