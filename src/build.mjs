@@ -456,7 +456,7 @@ const pages = [
         <div class="panel">
           <h2>Final Boss Overview</h2>
           <p class="muted">Checked boss guides identify Yoshitsune as the last major fight and describe the encounter as a long, demanding three-phase battle. Treat it as an endurance test instead of a burst-damage race.</p>
-          <p class="muted">Your goal is to preserve healing, learn which strings are safe to block or parry, and use Issen only when the timing is readable.</p>
+          <p class="muted">Your goal is to preserve healing, learn which strings are safe to block or parry, drain Yoshitsune's Rikido through defense, and use Issen only when the timing is readable.</p>
         </div>
         <div class="panel">
           <h2>Before the Fight</h2>
@@ -474,7 +474,7 @@ const pages = [
           <ul class="rule-list">
             <li><strong>Phase 1: learn the sword rhythm.</strong> Block or parry the cleaner sword strings, dodge attacks that push you out of position, and avoid using rare consumables just because you took one hit.</li>
             <li><strong>Phase 2: respect the faster pressure.</strong> Yoshitsune becomes harder to reset against, so take shorter punishes and look for red-glowing claw attacks as Issen opportunities only when you can read the timing.</li>
-            <li><strong>Phase 3: play for survival first.</strong> This is where saved healing, buffs, and Oni Awakening matter most. Do not chase damage after every knockdown; reset spacing and wait for a clean opening.</li>
+            <li><strong>Phase 3: play for survival first.</strong> Checked final-boss guides report that normal attacks stop being the reliable damage plan here. Use deflects, parries, and purple souls to reach Oni Awakening, then commit damage while awakened.</li>
           </ul>
         </div>
         <div class="panel">
@@ -493,7 +493,7 @@ const pages = [
           <ul class="rule-list">
             <li><strong>Entering without enough consumables.</strong> The fight is long enough that one bad phase can drain your supplies.</li>
             <li><strong>Forcing Issen on every attack.</strong> Missed counter attempts are often worse than simple defense.</li>
-            <li><strong>Spending Oni Awakening too early.</strong> Saving it for the last phase gives you a stronger recovery plan when the fight is most dangerous.</li>
+            <li><strong>Spending Oni Awakening too early.</strong> Saving it for the last phase matters because phase three is built around reaching your awakened damage window.</li>
             <li><strong>Overcommitting after a punish.</strong> Take the confirmed hits, then get ready to defend again.</li>
           </ul>
         </div>
@@ -509,7 +509,7 @@ const pages = [
             <li><strong>Who is the final boss in Onimusha: Way of the Sword?</strong> The final boss is Minamoto no Yoshitsune.</li>
             <li><strong>How many phases does the final boss have?</strong> Checked final-boss guides describe the fight as having three phases.</li>
             <li><strong>Should I use Issen against Yoshitsune?</strong> Yes, but only when the attack timing is clear. Red-glowing claw attacks are called out as useful counter opportunities in checked guides.</li>
-            <li><strong>What should I save for the last phase?</strong> Save major healing, buffs, and Oni Awakening for the most dangerous part of the fight.</li>
+            <li><strong>What should I save for the last phase?</strong> Save major healing, buffs, and Oni Awakening for phase three, where checked guides point players toward awakened damage rather than normal attacks.</li>
           </ul>
         </div>
       </section>
@@ -531,39 +531,39 @@ const pages = [
       <section class="page-header">
         <p class="eyebrow">Collectibles guide</p>
         <h1>Onimusha: Way of the Sword Hidden Treasures Guide</h1>
-        <p class="lede">Hidden Treasures are numbered optional chests found across Eastern Kyoto. This guide covers the five documented Hidden Treasure locations, with extra notes for No. 1 and No. 3 because those are easy to search for and miss.</p>
+        <p class="lede">Hidden Treasures are numbered optional chests found across Eastern Kyoto through Old Drawing clues and Oni Vision. This guide covers the five documented Hidden Treasure locations, with extra notes for No. 1 and No. 3 because those are easy to search for and miss.</p>
       </section>
       <section class="section">
         <div class="panel">
           <h2>Hidden Treasure Locations</h2>
           <ul class="rule-list">
-            <li><strong>Hidden Treasure No. 1 - Kiyomizu-dera.</strong> After the Swaying Bridge section, go through the red metal door near the save statue and check behind the crates.</li>
-            <li><strong>Hidden Treasure No. 2 - Gojo Bridge.</strong> After crossing the bridge, take the first lane on the right, use the grapple point, then look past the hole in the wall.</li>
-            <li><strong>Hidden Treasure No. 3 - Nijo Castle.</strong> After defeating the strong Genma and opening the metal door, check under the stairs in the southwest corner.</li>
-            <li><strong>Hidden Treasure No. 4 - Kuramadera.</strong> After solving the karakuri box and getting the Rusty Key, unlock the door to the north and follow the path to the chest.</li>
-            <li><strong>Hidden Treasure No. 5 - Kitano Tenmangu.</strong> Search the west-most lane near the chicken cages. If you lose the route, use Tenkai's guidance to narrow the direction.</li>
+            <li><strong>Hidden Treasure No. 1 - Kiyomizu-zaka Slope.</strong> Start near the Kiyomizu-zaka Slope Spirit Mirror, take the narrow path between buildings, climb the first ladder, then climb the smaller second ladder to the higher rooftop and use Oni Vision.</li>
+            <li><strong>Hidden Treasure No. 2 - Yasaka Pagoda waterfall.</strong> Start from the Yasaka Pagoda Spirit Mirror, move toward the nearby rock edge, climb down by the waterfall, and use Oni Vision at the bottom.</li>
+            <li><strong>Hidden Treasure No. 3 - Kamo River East.</strong> Start near the Kamo River East Spirit Mirror, enter the temple garden area, move toward the closed gate from the inside, and use Oni Vision there.</li>
+            <li><strong>Hidden Treasure No. 4 - Gojo Street East.</strong> Start near the Gojo Street East Spirit Mirror, reach the shrine-like balcony area, go around the outside rather than entering the building, and use Oni Vision on the balcony.</li>
+            <li><strong>Hidden Treasure No. 5 - Yasaka Pagoda rooftop.</strong> Return to the Yasaka Pagoda area, climb through the pagoda route to the upper rooftop, clear enemies if needed, then use Oni Vision on the southern side of the upper level.</li>
           </ul>
         </div>
       </section>
       <section class="section content-grid">
         <div class="panel">
           <h2>Hidden Treasure No. 1</h2>
-          <p class="muted">For Hidden Treasure No. 1, the key landmark is the save statue after the Swaying Bridge route in Kiyomizu-dera. Go through the nearby red metal door and inspect the crates instead of staying on the main path.</p>
-          <p class="muted">If you are already past this section, treat the red door and crate pile as your anchor points when backtracking.</p>
+          <p class="muted">For Hidden Treasure No. 1, the important detail is elevation. From the Kiyomizu-zaka Slope Spirit Mirror, head into the narrow side path, climb onto the first roof, then look for the smaller second ladder that takes you higher.</p>
+          <p class="muted">Use Oni Vision on the upper rooftop. If nothing appears on the first roof, keep climbing instead of dropping back to street level.</p>
         </div>
         <div class="panel">
           <h2>Hidden Treasure No. 3</h2>
-          <p class="muted">For Hidden Treasure No. 3, progress through Nijo Castle until the strong Genma encounter is cleared and the metal door opens. Once inside, do not rush forward; the chest is under the stairs in the southwest corner.</p>
-          <p class="muted">This is the one players often search as "hidden treasure 3" because the route can look like normal progression after the fight.</p>
+          <p class="muted">For Hidden Treasure No. 3, the search point is near Kamo River East. Enter the temple garden area from near the Spirit Mirror, move inside the wall toward the closed gate, and use Oni Vision from the inside of the garden area.</p>
+          <p class="muted">This is the one players often search as "hidden treasure 3" because standing outside the wall or checking the wrong side of the gate can make the clue feel misleading.</p>
         </div>
       </section>
       <section class="section content-grid">
         <div class="panel">
           <h2>Exploration Tips</h2>
           <ul class="rule-list">
-            <li><strong>Check side routes after major fights.</strong> Several treasure routes open or become easier to reach after combat encounters or gated paths.</li>
-            <li><strong>Look behind stairs, crates, and narrow lanes.</strong> Hidden Treasure chests are easy to miss when the main route points forward.</li>
-            <li><strong>Finish nearby locks and mechanisms.</strong> No. 4 depends on the Rusty Key route after the karakuri box, so puzzle progress can matter for collectibles.</li>
+            <li><strong>Read the Old Drawing as a landmark clue.</strong> The map marker narrows the area, but the exact reveal point depends on matching the drawing's landmark.</li>
+            <li><strong>Check elevation and building sides.</strong> No. 1 requires the higher rooftop, No. 3 is triggered from inside the wall, and No. 4 is on the exterior balcony.</li>
+            <li><strong>Use Oni Vision at the exact spot.</strong> The chest is hidden until the reveal action is used from the right position.</li>
             <li><strong>Keep puzzle notes nearby.</strong> If you are clearing optional rooms too, the <a href="/puzzles/mask-puzzle/">Mask Puzzle Guide</a> covers the mask-order solution.</li>
           </ul>
         </div>
@@ -577,8 +577,8 @@ const pages = [
           <h2>FAQ</h2>
           <ul class="rule-list">
             <li><strong>How many Hidden Treasures are in Onimusha: Way of the Sword?</strong> Current documented guides list five numbered Hidden Treasure chests.</li>
-            <li><strong>Where is Hidden Treasure No. 1?</strong> It is in Kiyomizu-dera, behind crates past the red metal door near the save statue after Swaying Bridge.</li>
-            <li><strong>Where is Hidden Treasure No. 3?</strong> It is in Nijo Castle, under the stairs in the southwest corner after the strong Genma encounter and metal door.</li>
+            <li><strong>Where is Hidden Treasure No. 1?</strong> It is on the higher rooftop reached from the Kiyomizu-zaka Slope route after climbing two ladders.</li>
+            <li><strong>Where is Hidden Treasure No. 3?</strong> It is near Kamo River East, by the closed gate inside the temple garden area.</li>
             <li><strong>Is this only a Hidden Treasure 3 guide?</strong> No. This is the main Hidden Treasures guide, with No. 3 highlighted because players commonly search for it by number.</li>
           </ul>
         </div>
